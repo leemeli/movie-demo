@@ -9,9 +9,9 @@ export default class MovieRow extends React.Component {
     render() {
         return (
             <tr>
-                <td><img className="poster-lg" src="movie poster_url" alt="poster for movie title" /></td>
+                <td><img className="poster-lg" src={this.props.data['poster_url']} alt={this.props.data['title']} /></td>
                 <td>{this.props.data['title']}</td>
-                <td>Movie Release Date</td>
+                <td>{this.props.data['release_date']}</td>
             </tr>
         );
     }

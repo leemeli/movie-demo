@@ -21,6 +21,7 @@ export default class MovieTable extends React.Component {
 
                     <MovieRow data = {this.props.movies[0]}/>
                     <MovieRow data = {this.props.movies[1]}/>
+                    <MovieRow data = {this.props.movies[2]}/>
 
                 </tbody>
             </table>
