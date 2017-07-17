@@ -1,0 +1,39 @@
+/* your css here */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: #1d1d1d;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem;
+}
+
+main, main section {
+    padding: 1rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th {
+    padding: 1rem 0;
+}
+
+th, td {
+    border: 1px solid #1d1d1d;
+}
+
