@@ -1,5 +1,5 @@
 import React from 'react';
-import MovieTable from '../MovieTable';
+import MovieTable from '../Components/MovieTable';
 
 import controller from '../MovieController';
 
