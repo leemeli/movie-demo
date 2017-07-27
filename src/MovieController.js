@@ -11,6 +11,26 @@ var controller = {
         return fetch(uri).then((response) => {
             return response.json();
         });
+    },
+
+    getMovieDetails(movieId) {
+        var resource = '/movie/' + movieId;
+        var uri = baseApiUrl + resource + '?api_key=' + apiKey;
+
+
+        return fetch(uri).then((response) => {
+            return response.json();
+        });
+    },
+
+    getSimilarMovies(movieId) {
+        var resource = '/movie/' + movieId + '/similar';
+        var uri = baseApiUrl + resource + '?api_key=' + apiKey;
+
+
+        return fetch(uri).then((response) => {
+            return response.json();
+        });
     }
 };
 

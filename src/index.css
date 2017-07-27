@@ -1,6 +1,11 @@
 /* your css here */
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;    
 }
 
 body {
@@ -10,15 +15,39 @@ body {
 header {
     background: #1d1d1d;
     color: white;
+    overflow: hidden;
 }
 
 h1 {
     margin: 0;
     padding: 2rem;
+    float: left;
 }
 
-main, main section {
-    padding: 1rem;
+header h1 a {
+    color: white;
+}
+
+header section {
+    float: right;
+    padding: 2.5rem;
+}
+
+header section input {
+    background: #1d1d1d;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+header section button {
+    background: #1d1d1d;;
+    border: 1px solid white;  
+    font-size: 1rem; 
+    color: white;
+    cursor: pointer;
 }
 
 table {
@@ -37,3 +66,63 @@ th, td {
     border: 1px solid #1d1d1d;
 }
 
+.container {
+    padding: 1rem;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.movie-card {
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.movie-card > * {
+    float: left;
+    overflow: hidden;
+}
+
+.movie-card img {
+    width: 20%;
+}
+
+.movie-card section {
+    width: 80%;
+    padding-left:1rem; 
+}
+
+.movie-card h2 {
+    margin: 0;
+}
+
+.similar-movies h2 {
+    padding-left: 0.5rem;    
+}
+
+.movie-poster-list img {
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.simple-movie-card {
+    float: left;
+    width: 21%;
+    padding: 1rem;
+    background: #efefef;
+    margin: 1rem;
+    text-align: center;
+    height: 360px; 
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+    color: black;
+}
+
+.simple-movie-card:hover {
+    transform: scale(1.05);
+}
+
+.simple-movie-card img {
+    max-width: 100%;
+}
